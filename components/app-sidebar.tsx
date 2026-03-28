@@ -31,15 +31,12 @@ export function AppSidebar() {
               size="lg"
               className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
             >
-              <Link href="/tools">
-                <div className="flex aspect-square size-12 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                  <img src="/delphi-lowlod.png" width={64} height={64} alt="Ingenious Tools logo" className="rounded-lg border-2 border-green-800" />
+              <Link href="/">
+                <div className="flex aspect-square size-9 items-center justify-center">
+                  <img src="/logo.png" width={48} height={48} alt="Ingenious Tools logo" />
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none">
-                  <span className="font-semibold">Ingenious Tools</span>
-                  <span className="text-xs text-muted-foreground">
-                    indie tools
-                  </span>
+                  <span className="font-semibold text-xl">Ingenious Tools</span>
                 </div>
               </Link>
             </SidebarMenuButton>
