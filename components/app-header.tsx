@@ -1,7 +1,6 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { Home, Sparkles } from "lucide-react";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
 import { getToolById, getCategoryByToolId } from "@/lib/tools";
@@ -36,15 +35,9 @@ export function AppHeader() {
             </Badge>
           )}
         </div>
-      ) : pathname === "/" ? (
-        <div className="flex items-center gap-2">
-          <Home className="size-5 text-muted-foreground" />
-          <h1 className="text-lg font-semibold">Home</h1>
-        </div>
       ) : (
         <div className="flex items-center gap-2">
-          <img src="/delphi.png" width={40} height={40} alt="delphitools logo" className="size-5 text-muted-foreground" />
-          <h1 className="text-lg font-semibold">delphitools</h1>
+          <h1 className="text-lg font-semibold">All Tools</h1>
         </div>
       )}
 

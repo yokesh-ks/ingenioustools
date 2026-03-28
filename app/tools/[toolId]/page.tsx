@@ -77,7 +77,7 @@ export async function generateMetadata({ params }: ToolPageProps) {
   }
 
   return {
-    title: `${tool.name} - delphitools`,
+    title: `${tool.name} - Ingenious Tools`,
     description: tool.description,
   };
 }
