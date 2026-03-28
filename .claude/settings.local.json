@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://api.github.com/repos/shadcn-ui/ui/contents/apps/www/registry/default/ui\")",
+      "Bash(node -e \"const chunks=[]; process.stdin.on\\(''''data'''',c=>chunks.push\\(c\\)\\); process.stdin.on\\(''''end'''',\\(\\)=>{ const d=JSON.parse\\(Buffer.concat\\(chunks\\)\\); d.filter\\(x=>x.name.includes\\(''''navigation''''\\)\\).forEach\\(x=>console.log\\(x.name, x.download_url\\)\\); }\\)\")",
+      "Bash(curl -s \"https://api.github.com/repos/shadcn-ui/ui/contents/apps/www/registry/default/ui\" -o \"C:/Users/ksyok/AppData/Local/Temp/ghui.json\")",
+      "Bash(node -e \"const d=require\\(''C:/Users/ksyok/AppData/Local/Temp/ghui.json''\\); d.filter\\(x=>x.name.includes\\(''navigation''\\)\\).forEach\\(x=>console.log\\(x.name, x.download_url\\)\\)\")",
+      "Bash(node -e \"const d=JSON.parse\\(require\\(''fs''\\).readFileSync\\(''C:/Users/ksyok/AppData/Local/Temp/ghui.json'',''utf8''\\)\\); d.filter\\(x=>x.name.includes\\(''navigation''\\)\\).forEach\\(x=>console.log\\(x.name, x.download_url\\)\\)\")",
+      "Bash(node -e \"const raw=require\\(''fs''\\).readFileSync\\(''C:/Users/ksyok/AppData/Local/Temp/ghui.json'',''utf8''\\); console.log\\(raw.substring\\(0,500\\)\\)\")",
+      "Bash(curl -s \"https://api.github.com/repos/shadcn-ui/ui/contents\")",
+      "Bash(node -e \"const raw=[]; process.stdin.on\\(''''data'''',d=>raw.push\\(d\\)\\); process.stdin.on\\(''''end'''',\\(\\)=>console.log\\(Buffer.concat\\(raw\\).toString\\(\\).substring\\(0,1000\\)\\)\\)\")",
+      "Bash(curl -s \"https://api.github.com/repos/shadcn-ui/ui/contents/apps/www\" -o \"C:/Users/ksyok/AppData/Local/Temp/www.json\")",
+      "Bash(node -e \"const raw=require\\(''fs''\\).readFileSync\\(''C:/Users/ksyok/AppData/Local/Temp/www.json'',''utf8''\\); console.log\\(raw.substring\\(0,300\\)\\)\")",
+      "Bash(curl -s \"https://api.github.com/repos/shadcn-ui/ui/contents/packages\" -o \"C:/Users/ksyok/AppData/Local/Temp/pkgs.json\")",
+      "Bash(node -e \"const raw=require\\(''fs''\\).readFileSync\\(''C:/Users/ksyok/AppData/Local/Temp/pkgs.json'',''utf8''\\); const d=JSON.parse\\(raw\\); Array.isArray\\(d\\) ? d.forEach\\(x=>console.log\\(x.name\\)\\) : console.log\\(raw.substring\\(0,300\\)\\)\")",
+      "Bash(curl -s \"https://api.github.com/repos/shadcn-ui/ui/git/trees/main?recursive=0\" -o \"C:/Users/ksyok/AppData/Local/Temp/tree_root.json\")",
+      "Bash(node -e \"const d=JSON.parse\\(require\\(''fs''\\).readFileSync\\(''C:/Users/ksyok/AppData/Local/Temp/tree_root.json'',''utf8''\\)\\); d.tree.forEach\\(x=>console.log\\(x.path, x.type\\)\\)\")",
+      "Bash(node -e \"const d=JSON.parse\\(require\\(''fs''\\).readFileSync\\(''C:/Users/ksyok/AppData/Local/Temp/nav-menu-default.json'',''utf8''\\)\\); d.files.forEach\\(\\(f,i\\)=>{ console.log\\(''=== FILE'',i,'':'',f.path,''===''\\); console.log\\(f.content\\); }\\)\")",
+      "Bash(\"d:/yokesh-ks/ingenioustools/components/ui/navigation-menu.tsx\")",
+      "Bash(ls d:/yokesh-ks/ingenioustools/node_modules/.pnpm/@radix-ui+react-navigation-*)"
+    ]
+  }
+}
