@@ -416,20 +416,6 @@ export const toolCategories: ToolCategory[] = [
       },
     ],
   },
-  {
-    id: "turbo-nerd",
-    name: "Turbo-nerd Shit",
-    tools: [
-      {
-        id: "shavian-transliterator",
-        name: "Shavian Transliterator",
-        description: "Transliterate English text to the Shavian alphabet",
-        icon: Languages,
-        href: "/tools/shavian-transliterator",
-        new: true,
-      },
-    ],
-  },
 ];
 
 export const allTools = toolCategories.flatMap((category) => category.tools);
