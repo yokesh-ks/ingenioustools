@@ -111,10 +111,8 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t">
         <div className="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between text-xs text-muted-foreground">
-          <span>Ingenious Tools — built for the web, by the web.</span>
-          <Link href="/tools" className="hover:text-foreground transition-colors">
-            Browse tools →
-          </Link>
+          <span>© 2026 <a href="https://www.ingeniousclan.com/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">IngeniousClan</a>. All rights reserved.</span>
+          <span>Made with ♥ by <a href="https://www.yokesh.in/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Yokesh</a></span>
         </div>
       </footer>
     </div>
